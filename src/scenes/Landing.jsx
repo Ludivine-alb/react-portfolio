@@ -57,8 +57,7 @@ const Landing = ({ setSelectedPage }) => {
           <p className="mt-10 text-sm text-center">Développeuse web junior passionnée et avide d'apprendre.</p>
 
           <p className="mt-10 mb-7 text-1xl font-playfair text-center md:text-start">
-            Après plusieurs années dans la vente alimentaire, j'ai décidé de faire une formation certifiante de cinq mois en rejoignant la Wild Code School où je me suis spécialisée en back-end grâce à Php/Symfony. Suite à cette formation, j'ai effectué un stage de six mois au sein de la start-up En Voiture Simone. Cette experience m'a permit de mettre en pratique mes acquis, de decouvrir de nouvelles technologies comme Ruby on Rails et de monter en compétences.
-            Désireuse d'en apprendre davantage et de démarrer au mieux ma carrière de développeuse web, je suis à la recherche d'une alternance en contrat d'apprentissage pour la fin du mois d'Avril.
+          Après avoir suivi une formation de cinq mois à la Wild Code School, j'ai fait un stage de six mois chez En Voiture Simone, la seule auto-école qui ne vous demande pas d'arriver au point A en voiture ! Cette expérience m'a permis de mettre en pratique mes connaissances, de découvrir de nouvelles technologies telles que Ruby On rails et surtout de travailler avec une équipe super sympa. Maintenant, je suis prête à faire le grand saut dans le monde professionnel et je suis à la recherche d'une opportunité d'alternance en contrat d'apprentissage pour la fin d'avril. Si vous avez besoin d'une développeuse web motivée et pleine d'humour, n'hésitez pas à me contacter !
           </p>
         </motion.div>
 
