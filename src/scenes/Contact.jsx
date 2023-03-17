@@ -33,7 +33,7 @@ const Contact = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            <span className="text-yellow">CONTACT ME</span> TO GET STARTED
+            <span className="text-yellow">Contactez-moi via ce</span> formulaire
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-1/2" />
@@ -71,13 +71,13 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
+            action="https://formsubmit.co/ludivine.alb@gmail.com"
             method="POST"
           >
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
               type="text"
-              placeholder="NAME"
+              placeholder="Prénom/pseudo"
               {...register("name", {
                 required: true,
                 maxLength: 100,
@@ -85,15 +85,15 @@ const Contact = () => {
             />
             {errors.name && (
               <p className="text-red mt-1">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "maxLength" && "Max length is 100 char."}
+                {errors.name.type === "required" && "Ce champ est obligatoire."}
+                {errors.name.type === "maxLength" && "100 caractères maximum."}
               </p>
             )}
 
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
-              placeholder="EMAIL"
+              placeholder="email"
               {...register("email", {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -101,15 +101,15 @@ const Contact = () => {
             />
             {errors.email && (
               <p className="text-red mt-1">
-                {errors.email.type === "required" && "This field is required."}
-                {errors.email.type === "pattern" && "Invalid email address."}
+                {errors.email.type === "required" && "Ce champ est obligatoire."}
+                {errors.email.type === "pattern" && "Adresse email invalide."}
               </p>
             )}
 
             <textarea
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
-              placeholder="MESSAGE"
+              placeholder="message"
               rows="4"
               cols="50"
               {...register("message", {
@@ -120,9 +120,9 @@ const Contact = () => {
             {errors.message && (
               <p className="text-red mt-1">
                 {errors.message.type === "required" &&
-                  "This field is required."}
+                  "Ce champ est obligatoire."}
                 {errors.message.type === "maxLength" &&
-                  "Max length is 2000 char."}
+                  "2000 caractères maximum."}
               </p>
             )}
 
@@ -130,7 +130,7 @@ const Contact = () => {
               className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
               type="submit"
             >
-              SEND ME A MESSAGE
+              ENVOYER UN MESSAGE
             </button>
           </form>
         </motion.div>

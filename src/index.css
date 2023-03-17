@@ -12,3 +12,7 @@ body,
   background-color: #010026;
   @apply text-white;
 }
+
+.profile-picture {
+  border-radius: 50% 50% 0 0; 
+}

@@ -8,10 +8,10 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10 mb-20 mt-20"
     >
       {/* IMAGE SECTION */}
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="basis-3/5 z-10 mt-16 mb-5 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
@@ -19,14 +19,14 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px] rounded-lg profile-picture"
               src="assets/profile-image.png"
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="z-10 w-full max-w-[400px] md:max-w-[500px]"
             src="assets/profile-image.png"
           />
         )}
@@ -45,19 +45,20 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Jane {""}
+          <p className="text-5xl font-playfair z-10 text-center md:text-start">
+            Ludivine {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
               before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
             >
-              Esper
+            Alberola
             </span>
           </p>
+          <p className="mt-10 text-sm text-center">Développeuse web junior passionnée et avide d'apprendre.</p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+          <p className="mt-10 mb-7 text-1xl font-playfair text-center md:text-start">
+            Après plusieurs années dans la vente alimentaire, j'ai décidé de faire une formation certifiante de cinq mois en rejoignant la Wild Code School où je me suis spécialisée en back-end grâce à Php/Symfony. Suite à cette formation, j'ai effectué un stage de six mois au sein de la start-up En Voiture Simone. Cette experience m'a permit de mettre en pratique mes acquis, de decouvrir de nouvelles technologies comme Ruby on Rails et de monter en compétences.
+            Désireuse d'en apprendre davantage et de démarrer au mieux ma carrière de développeuse web, je suis à la recherche d'une alternance en contrat d'apprentissage pour la fin du mois d'Avril.
           </p>
         </motion.div>
 
@@ -75,25 +76,16 @@ const Landing = ({ setSelectedPage }) => {
         >
           <AnchorLink
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-              hover:bg-blue hover:text-white transition duration-500"
+              hover:bg-blue hover:text-white transition duration-500 mt-4"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            Contact Me
-          </AnchorLink>
-          <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
-          >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
-              Let's talk.
-            </div>
+            Me contacter
           </AnchorLink>
         </motion.div>
 
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
