@@ -31,7 +31,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         {isDesktop ? (
           <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
             <Link
-              page="Home"
+              page="Acceuil"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -74,7 +74,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             {/* MENU ITEMS */}
             <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
               <Link
-                page="Home"
+                page="acceuil"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />

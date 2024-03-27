@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState("home");
+  const [selectedPage, setSelectedPage] = useState("acceuil");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 1060px)");
 
@@ -19,7 +19,7 @@ function App() {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
-        setSelectedPage("home");
+        setSelectedPage("acceuil");
       }
       if (window.scrollY !== 0) setIsTopOfPage(false);
     };
@@ -44,7 +44,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("home")}
+          onViewportEnter={() => setSelectedPage("acceuil")}
         >
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>

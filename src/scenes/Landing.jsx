@@ -7,7 +7,7 @@ const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section
-      id="home"
+      id="accueil"
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10 mb-20 mt-20"
     >
       {/* IMAGE SECTION */}
@@ -54,10 +54,10 @@ const Landing = ({ setSelectedPage }) => {
             Alberola
             </span>
           </p>
-          <p className="mt-10 text-sm text-center">Développeuse web junior passionnée et avide d'apprendre.</p>
+          <p className="mt-10 text-sm text-center">Développeuse web & conceptrice designer UX/UI passionnée et avide d'apprendre.</p>
 
           <p className="mt-10 mb-7 text-1xl font-playfair text-center md:text-start">
-          Après avoir suivi une formation de cinq mois à la Wild Code School, j'ai fait un stage de six mois chez En Voiture Simone, la seule auto-école qui ne vous demande pas d'arriver au point A en voiture ! Cette expérience m'a permis de mettre en pratique mes connaissances, de découvrir de nouvelles technologies telles que Ruby On rails et surtout de travailler avec une équipe super sympa. Maintenant, je suis prête à faire le grand saut dans le monde professionnel et je suis à la recherche d'une opportunité d'alternance en contrat d'apprentissage pour la fin d'avril. Si vous avez besoin d'une développeuse web motivée et pleine d'humour, n'hésitez pas à me contacter !
+          Après avoir suivi une formation de cinq mois à la Wild Code School, j'ai fait un stage de six mois chez En Voiture Simone, la seule auto-école qui ne vous demande pas d'arriver au point A en voiture ! Cette expérience m'a permis de mettre en pratique mes connaissances, de découvrir de nouvelles technologies telles que Ruby On rails et surtout de travailler avec une équipe super sympa. C'est aussi pendant ce stage que j'ai découvert ma passion pour l'UX/UI design, grâce aux équipes produit et design. Je suis aujourd'hui à la recherche d'une alternance en UX/UI design afin de pouvoir exprimer ma créativité.
           </p>
         </motion.div>
 

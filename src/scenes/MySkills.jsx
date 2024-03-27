@@ -32,7 +32,7 @@ const MySkills = () => {
             <br/>
             <strong>Versioning</strong> -> Git/Github.
             <br/>
-            <strong>Extras</strong> -> Méthode Scrum, Visual Studio Code, RubyMine, Jira, Trello, Figma, Slack.
+            <strong>Extras</strong> -> Méthode Scrum, Visual Studio Code, RubyMine, Jira, Trello, Figma, Canva, Procreate,  Slack.
             </p>
           </motion.div>
 
